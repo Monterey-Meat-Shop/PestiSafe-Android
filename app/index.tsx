@@ -7,8 +7,8 @@ export default function GetStartedScreen() {
 
   return (
     <View className="flex-1 items-center justify-between bg-primary p-5">
-      {/* Top Section */}
-      <View className="items-center pt-40"> {/* Added pt-10 for some top padding */}
+
+      <View className="items-center pt-40">
         <Image
           source={require('../assets/icons/LogoWhite.png')} // Adjust the path as necessary
           className="w-16 h-16 mb-5"
@@ -19,7 +19,7 @@ export default function GetStartedScreen() {
         </Text>
       </View>
 
-      {/* Bottom Section */}
+
       <Pressable
         className="bg-white py-4 px-8 rounded-lg w-4/5 items-center mb-40" // Added mb-10 for some bottom padding
         onPress={() => router.push('/login')} // Navigate to login or register
